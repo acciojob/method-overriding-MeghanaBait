@@ -13,16 +13,12 @@ public class Main {
             return "Method is overridden in Extended class B";
         }
 
-        public String callSuperMeth() {
-            // Using super to call the method from the parent class (class A)
-            return super.meth();
-        }
     }
 
 
     public static void main(String[] args) {
         B obj1 = new B();
-        obj1.callSuperMeth();
+        obj1.meth();
 
         B obj2 = new B();
         obj2.meth();
